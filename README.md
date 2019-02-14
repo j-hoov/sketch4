@@ -1,10 +1,9 @@
-# Third Sketch - Algorithmic Design
+# Fourth Sketch - Dynamic Arrays
 ------
-##### Idea #1
+##### First Attempt
 
-![sketch](images/sketch.jpg?raw=true "sketch")
-![pseudo-code](images/pseudo-code.jpg?raw=true "pseudo-code")
-
-The goal of this piece is to create a pointilist expanded version of an image. The idea is to fill an array with the pixels of an image, use this to create an array of ellipses of random size with the RGB values of the pixel at the center, and then to move the ellipses outward from the center of the object to create an expanded image. In actually coding this piece, I might dispense with the pix array/class, since it might not be necessary. It would also be interesting to play with directionality of the ellipse movement - perhaps they can move radially outward from a mouse click. Feasibility of this piece is TBD, but this is my first idea for a sketch with algorithmic design.
+![sketch](images/sketch4_1.png?raw=true "sketch")
+![sketch](images/sketch4_2.png?raw=true "sketch")
 
 
+I tried to incorporate effective dynamic arrays into this sketch, along with boolean statements and some keypress and mouse position interactions. It was challenging to work out the code for these components, so I did not spend as long committing to the aesthetics of the piece. However, this sketch helped me grasp the mechanics of these components, and hopefully this sketch will continue to evolve. It consists of two shapes, each made of an array of line segments. movement of these shape-arrays is dependent on the X position of the mouse. The number of segments can be manipulated by the left-right arrow keys, and the weight of the line stroke can be changed with the up-down arrow keys. A mouse press changes the stroke color. My favorite part of this piece may be the alpha blended background and the feeling of motion it creates. Looking forward to experimenting more ~ 
