@@ -4,14 +4,10 @@ let shape2 = [];
 let a = 175;
 let num_seg = 5;
 let seg_d = 30;
-let img;
 let bool;
 let b;
 let s_w = 5;
 
-function preload(){
-    img = loadImage('images/shapes.jpg');
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -56,6 +52,7 @@ function draw() {
   }
 
   strokeWeight(s_w);
+
   for (let i=0; i<num_seg; i++){
     shape1[i].move();
     shape1[i].display();
@@ -68,8 +65,8 @@ class Seg {
   constructor(tx1,ty1,tx2,ty2) {
     this.x1 = tx1;
     this.y1 = ty1;
-	this.x2 = tx2;
-	this.y2 = ty2;
+	  this.x2 = tx2;
+	  this.y2 = ty2;
   }
 
   move() {
